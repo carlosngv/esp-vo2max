@@ -1,0 +1,38 @@
+<div class="dashboard">
+
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+            <div class="dashboard_one">
+                <div class="title">¡Bienvenido {{ username }}!</div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Ingresa tu peso en kilogramos">
+                    <label for="floatingInput">Ingresa tu peso en kilogramos</label>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <div class="dashboard_one">
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="dashboard_two">
+
+                <div style="display: block">
+                    <canvas baseChart
+                        [data]="vxoData"
+                        [labels]="vxoLabels"
+                        [options]="vxoChartOptions"
+                        [legend]="vxoChartLegend"
+                        [chartType]="vxoChartType"
+                      >
+
+                    </canvas>
+                  </div>
+
+            </div>
+        </div>
+    </div>
+</div>
